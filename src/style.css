@@ -3,5 +3,5 @@
 @import "tailwindcss/utilities";
 
 .mobile-blocks {
-    @apply col-span-12 w-full md:col-span-6
+    @apply col-span-12 w-full 
 }
