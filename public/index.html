@@ -11,9 +11,9 @@
 <body>
     <main class="grid grid-cols-12">
 
-        <header class="mobile-blocks relative grid">
-            <img src="/images/mobile-image-hero-1.jpg" alt="" class="mobile-blocks">
-            <nav class="absolute bg-white text-sm font-bold w-full py-10 px-4 z-10 grid grid-cols-5 items-center hidden"> <!--mobile nav-->
+        <header class="mobile col-span-12 w-full relative grid">
+            <img src="/images/mobile-image-hero-1.jpg" alt="" class="col-span-12 w-full">
+            <nav class="fixed bg-white text-sm font-bold w-full py-10 px-4 z-10 grid grid-cols-5 items-center hidden"> <!--mobile nav-->
                 <img src="/images/icon-close.svg" alt="close nav" class="">
                 <a href="#">home</a>
                 <a href="#">shop</a>
@@ -24,40 +24,62 @@
                 <img src="/images/icon-hamburger.svg" alt="nav">
                 <img src="/images/logo.svg" alt="logo">
             </div>
-            <div class="slide absolute bg-black place-self-end w-1/3 py-5 px-8 flex justify-between"> <!--left and right icons-->
+            <div class="slide absolute bg-black place-self-end w-1/3 py-5 px-8 flex justify-between"> <!--mobile left and right icons-->
                 <img src="/images/icon-angle-left.svg" alt="left" class="h-4">
                 <img src="/images/icon-angle-right.svg" alt="right" class="h-4">
             </div>
         </header>
 
-        <article class="mobile-blocks grid place-content-center px-3 py-14">
-            <h1 class="text-4xl font-bold tracking-tighter">Discover innovative <br> ways to decorate</h1>
-            <p class="text-primary-100 text-sm tracking-wide py-4">
-                We provide unmatched quality, comfort, and <br>
-                style for property owners across the country. <br>
-                Our experts combine form and function in <br>
-                bringing your vision to life. Create a room in <br> 
-                your own style with our collection and make your <br> property a reflection of you and what you love.
+        <header class="desktop col-span-7 relative">
+            <img src="/images/desktop-image-hero-1.jpg" alt="" class="w-full">
+            <nav class="desktop-nav absolute text-white text-sm font-semibold w-1/2 p-2 grid grid-cols-5 items-center justify-items-center">
+                <img src="/images/logo.svg" alt="">
+                <a href="#">home</a>
+                <a href="#">shop</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+            </nav>
+        </header>
+
+        <article class="col-span-12 grid place-content-center py-14 lg:col-span-5 lg:p-0">
+            <h1 class="text-4xl font-bold tracking-tighter lg:text-5xl">Discover innovative <br> ways to decorate</h1>
+            <p class="text-primary-100 text-sm tracking-wide py-4 lg:pt-8">
+                We provide unmatched quality, comfort, and <br class="mobile">
+                style for property <br class="desktop"> owners across the country. <br class="mobile">
+                Our experts combine form and <br class="desktop"> function in <br class="mobile">
+                bringing your vision to life. Create a room in <br class="mobile"> 
+                your <br class="desktop"> own style with our collection and make your <br class="mobile"> 
+                property a <br class="desktop"> reflection of you and what you love.
             </p>
             <div class="flex items-center">
                 <span class="shop-now text-sm font-semibold py-5">SHOP NOW</span>
                 <span><img src="/images/icon-arrow.svg" alt="icon-arrow" class="ml-6"></span>
             </div>
+            <div class="desktop slide absolute bg-black place-self-end w-1/3 py-5 px-8 flex justify-between"> <!--desktop left and right icons-->
+                <img src="/images/icon-angle-left.svg" alt="left" class="h-4 inline-block">
+                <img src="/images/icon-angle-right.svg" alt="right" class="h-4 inline-block">
+            </div>
         </article>
 
-        <img src="/images/image-about-dark.jpg" alt="" class="mobile-blocks">
+        <img src="/images/image-about-dark.jpg" alt="" class="mobile col-span-12 w-full">
+        <img src="/images/image-about-dark.jpg" alt="" class="desktop col-span-3">
 
-        <article class="mobile-blocks grid place-content-center py-12">
-            <h1 class="about-furniture text-sm font-bold">ABOUT OUR FURNITURE</h1>
+        <article class="col-span-12 grid place-content-center py-12 lg:col-span-6 lg:p-0">
+            <h1 class="about-furniture text-sm font-bold lg:text-base lg:font-bold">ABOUT OUR FURNITURE</h1>
             <p class="text-primary-100 text-sm tracking-wide pt-4">
-                Our multifunctional collection blends design and <br> function to suit your individual taste. Make each <br> room unique, or pick a cohesive theme that best <br> express your interests and what inspires you. <br> 
-                Find the furniture pieces you need, from <br>
-                traditional to contemporary styles or anything in <br> between. Product specialists are available to <br> 
+                Our multifunctional collection blends design and <br class="mobile"> 
+                function to suit your <br class="desktop"> individual taste. Make each <br class="mobile"> 
+                room unique, or pick a cohesive theme that best <br> 
+                express your interests and what inspires you. <br class="mobile"> 
+                Find the furniture pieces you <br class="desktop"> need, from <br class="mobile">
+                traditional to contemporary styles or anything in <br class="mobile"> 
+                between. <br class="desktop"> Product specialists are available to <br class="mobile"> 
                 help you create your dream space.
             </p>
         </article>
 
-        <img src="/images/image-about-light.jpg" alt="" class="mobile-blocks">
+        <img src="/images/image-about-light.jpg" alt="" class="mobile col-span-12 w-full">
+        <img src="/images/image-about-light.jpg" alt="" class="desktop col-span-3">
 
     </main>
 </body>

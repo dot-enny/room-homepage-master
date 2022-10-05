@@ -2,6 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.mobile-blocks {
-    @apply col-span-12 w-full 
+.mobile {
+    @apply lg:hidden
+}
+.desktop {
+    @apply hidden lg:block
 }
