@@ -8,6 +8,13 @@
     top: 10%;
     left: 5%;
 }
+.desktop-nav a {
+    padding-bottom: 5px;
+}
+.desktop-nav a:hover {
+    border-bottom: solid 2px white;
+    cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
     main {
         max-width: 32rem;

@@ -8,3 +8,9 @@
 .desktop {
     @apply hidden lg:block
 }
+.mobile-sliders {
+    @apply bg-black justify-self-stretch p-5 grid justify-items-center hover:bg-primary-200
+}
+.desktop-sliders {
+    @apply bg-black justify-self-stretch p-7 grid justify-items-center hover:bg-primary-200
+}
