@@ -844,6 +844,16 @@ video {
     grid-column: span 6 / span 6;
   }
 
+  .lg\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .lg\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .lg\:ml-1 {
     margin-left: 0.25rem;
   }
@@ -854,6 +864,20 @@ video {
 
   .lg\:mr-2 {
     margin-right: 0.5rem;
+  }
+
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:lg\:mt-8 {
+      margin-top: 2rem;
+    }
   }
 
   .lg\:grid {
@@ -874,6 +898,10 @@ video {
 
   .lg\:h-10 {
     height: 2.5rem;
+  }
+
+  .lg\:max-h-full {
+    max-height: 100%;
   }
 
   .lg\:p-0 {
@@ -932,6 +960,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
