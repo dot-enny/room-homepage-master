@@ -615,10 +615,6 @@ video {
   width: 50%;
 }
 
-.w-1\/6 {
-  width: 16.666667%;
-}
-
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -658,10 +654,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.fill-white {
-  fill: #fff;
 }
 
 .p-2 {
@@ -779,7 +771,6 @@ video {
   justify-self: stretch;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  padding: 1.75rem;
 }
 
 .desktop-sliders:hover {
@@ -789,13 +780,15 @@ video {
 
 @media (min-width: 1024px) {
   .desktop-sliders {
-    height: 1rem;
+    height: 100%;
+    padding: 1.25rem;
   }
 }
 
 @media (min-width: 1280px) {
   .desktop-sliders {
     height: 100%;
+    padding: 1.75rem;
   }
 }
 
@@ -809,8 +802,8 @@ video {
     grid-column: span 5 / span 5;
   }
 
-  .lg\:col-span-6 {
-    grid-column: span 6 / span 6;
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
 
   .lg\:mr-2 {
@@ -821,32 +814,8 @@ video {
     display: grid;
   }
 
-  .lg\:h-2 {
-    height: 0.5rem;
-  }
-
-  .lg\:h-3 {
-    height: 0.75rem;
-  }
-
-  .lg\:h-6 {
-    height: 1.5rem;
-  }
-
-  .lg\:h-8 {
-    height: 2rem;
-  }
-
-  .lg\:h-10 {
-    height: 2.5rem;
-  }
-
-  .lg\:h-12 {
-    height: 3rem;
-  }
-
-  .lg\:h-16 {
-    height: 4rem;
+  .lg\:grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 
   .lg\:p-0 {
@@ -856,41 +825,6 @@ video {
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .lg\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .lg\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .lg\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .lg\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  .lg\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .lg\:py-7 {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-  }
-
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .lg\:pt-8 {
@@ -918,10 +852,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:h-full {
-    height: 100%;
-  }
-
   .xl\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;

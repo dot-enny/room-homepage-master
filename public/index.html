@@ -41,7 +41,7 @@
             </nav>
         </header>
 
-        <article class="col-span-12 grid place-content-center py-14 lg:col-span-5 lg:p-0">
+        <section class="col-span-12 grid place-content-center py-14 lg:col-span-5 lg:p-0">
             <h1 class="text-4xl font-bold tracking-tighter lg:text-3xl xl:text-5xl">Discover innovative <br> ways to decorate</h1>
             <p class="text-primary-100 text-sm tracking-wide py-4 lg:pt-8 lg:text-xs xl:text-sm">
                 We provide unmatched quality, comfort, and <br class="mobile">
@@ -51,35 +51,37 @@
                 your <br class="desktop"> own style with our collection and make your <br class="mobile"> 
                 property a <br class="desktop"> reflection of you and what you love.
             </p>
-            <div class="flex items-center fill-white">
+            <div class="flex items-center">
                 <span class="shop-now text-sm font-semibold py-5 hover:text-primary-100 lg:text-xs xl:text-sm">SHOP NOW</span>
                 <span><img src="/images/icon-arrow.svg" alt="icon-arrow" class="ml-6"></span>
             </div>
-            <div class="desktop absolute w-1/6 self-end lg:grid grid-cols-2"> <!--desktop left and right icons-->
-                <div class="desktop-sliders"><img src="/images/icon-angle-left.svg" alt="left" class="lg:h-2 xl:h-full"></div>
-                <div class="desktop-sliders"><img src="/images/icon-angle-right.svg" alt="right" class="lg:h-2 xl:h-full"></div>
+            <div class="desktop desktop-slide absolute self-end lg:grid grid-cols-2"> <!--desktop left and right icons-->
+                <div class="desktop-sliders"><img src="/images/icon-angle-left.svg" alt="left"></div>
+                <div class="desktop-sliders"><img src="/images/icon-angle-right.svg" alt="right"></div>
             </div>
-        </article>
+        </section>
 
         <img src="/images/image-about-dark.jpg" alt="" class="mobile col-span-12 w-full">
-        <img src="/images/image-about-dark.jpg" alt="" class="desktop col-span-3">
 
-        <article class="col-span-12 grid place-content-center py-12 lg:col-span-6 lg:p-0">
-            <h1 class="about-furniture text-sm font-bold lg:text-sm lg:font-bold xl:text-base">ABOUT OUR FURNITURE</h1>
-            <p class="text-primary-100 text-sm tracking-wide pt-4 lg:text-xs xl:text-sm">
-                Our multifunctional collection blends design and <br class="mobile"> 
-                function to suit your <br class="desktop"> individual taste. Make each <br class="mobile"> 
-                room unique, or pick a cohesive theme that best <br> 
-                express your interests and what inspires you. <br class="mobile"> 
-                Find the furniture pieces you <br class="desktop"> need, from <br class="mobile">
-                traditional to contemporary styles or anything in <br class="mobile"> 
-                between. <br class="desktop"> Product specialists are available to <br class="mobile"> 
-                help you create your dream space.
-            </p>
-        </article>
+        <div class="bottom-half col-span-12 lg:grid lg:grid-cols-10"> <!--bottom half desktop-->
+            <div class="dark desktop col-span-3"><img src="/images/image-about-dark.jpg" alt="" class="w-full"></div>
+            <section class="about-furniture col-span-12 grid place-content-center py-12 lg:p-0 lg:col-span-4">
+                <h1 class="text-sm font-bold lg:text-sm lg:font-bold xl:text-base">ABOUT OUR FURNITURE</h1>
+                <p class="text-primary-100 text-sm tracking-wide pt-4 lg:text-xs xl:text-sm">
+                    Our multifunctional collection blends design and <br class="mobile"> 
+                    function to suit your <br class="desktop"> individual taste. Make each <br class="mobile"> 
+                    room unique, or pick a cohesive theme that best <br> 
+                    express your interests and what inspires you. <br class="mobile"> 
+                    Find the furniture pieces you <br class="desktop"> need, from <br class="mobile">
+                    traditional to contemporary styles or anything in <br class="mobile"> 
+                    between. <br class="desktop"> Product specialists are available to <br class="mobile"> 
+                    help you create your dream space.
+                </p>
+            </section>
+            <div class="light desktop col-span-3"><img src="/images/image-about-light.jpg" alt="" class="w-full"></div>
+        </div>
 
         <img src="/images/image-about-light.jpg" alt="" class="mobile col-span-12 w-full">
-        <img src="/images/image-about-light.jpg" alt="" class="desktop col-span-3">
 
     </main>
 </body>
