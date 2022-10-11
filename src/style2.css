@@ -1,3 +1,6 @@
+main {
+    box-shadow: 1px 1px 12px 2px hsl(0, 2%, 85%);
+}
 .shop-now {
     letter-spacing: 0.8em;
 }
