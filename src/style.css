@@ -2,6 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@500;600;700&display=swap');
+
 .mobile {
     @apply lg:hidden
 }
