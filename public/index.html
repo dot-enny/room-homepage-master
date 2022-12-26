@@ -10,7 +10,7 @@
 </head>
 <body>
     <main class="grid grid-cols-12 lg:my-14 xl:my-0">
-        <header class="hero carousel col-span-12 lg:col-span-7 relative"> 
+        <header class="hero__image carousel col-span-12 lg:col-span-7 relative"> 
             <!--MOBILE NAV-->
             <nav class="mobile is-hidden mobile__nav-container absolute bg-white text-sm font-bold w-full py-10 px-4 z-20">
                 <ul class="mobile__nav flex justify-around">
@@ -64,7 +64,7 @@
             </div>
         </header>
 
-        <section class="details col-span-12 grid place-content-center py-14 lg:col-span-5 lg:p-0">
+        <section class="hero__text col-span-12 grid place-content-center py-14 lg:col-span-5 lg:p-0">
             <h1 class="text-4xl font-bold tracking-tighter lg:text-3xl xl:text-5xl">Discover innovative <br> ways to decorate</h1>
             <p class="text-primary-100 text-sm tracking-wide py-4 lg:pt-8 lg:text-xs xl:text-sm">
                 We provide unmatched quality, comfort, and <br class="mobile">
@@ -89,11 +89,14 @@
                 </button>
             </div>
         </section>
-
-        <img src="/images/image-about-dark.jpg" alt="" class="mobile col-span-12 w-full">
-
-        <div class="bottom-half col-span-12 lg:grid lg:grid-cols-10"> <!--bottom half desktop-->
-            <div class="dark desktop col-span-3"><img src="/images/image-about-dark.jpg" alt="" class="w-full"></div>
+        
+        <!--ABOUT-DARK__IMAGE--MOBILE-->
+        <img src="/images/image-about-dark.jpg" alt="dark" class="mobile col-span-12 w-full">
+        
+        <!--BOTTOM HALF DESKTOP (ABOUT-SECTION)-->
+        <div class="about-section col-span-12 lg:grid lg:grid-cols-10"> 
+            <!--ABOUT-DARK__IMAGE--DESKTOP-->
+            <div class="desktop col-span-3"><img src="/images/image-about-dark.jpg" alt="dark" class="w-full"></div>
             <section class="about-furniture col-span-12 grid place-content-center py-12 lg:p-0 lg:col-span-4">
                 <h1 class="text-sm font-bold lg:text-sm lg:font-bold xl:text-base">ABOUT OUR FURNITURE</h1>
                 <p class="text-primary-100 text-sm tracking-wide pt-4 lg:text-xs xl:text-sm">
@@ -107,10 +110,13 @@
                     help you create your dream space.
                 </p>
             </section>
-            <div class="light desktop col-span-3"><img src="/images/image-about-light.jpg" alt="" class="w-full h-full"></div>
+            <!--ABOUT-LIGHT__IMAGE--DESKTOP-->
+            <div class="desktop col-span-3"><img src="/images/image-about-light.jpg" alt="light" class="w-full h-full"></div>
         </div>
 
-        <img src="/images/image-about-light.jpg" alt="" class="mobile col-span-12 w-full">
+        <!--ABOUT-LIGHT__IMAGE--MOBILE-->
+        <img src="/images/image-about-light.jpg" alt="light" class="mobile col-span-12 w-full">
+
     </main>
     <script src="/src/carousel.js"></script>
     <script src="/src/mobile-nav.js"></script>
