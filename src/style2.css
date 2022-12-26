@@ -1,23 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 main {
     box-shadow: 1px 1px 12px 2px hsl(0, 2%, 85%);
 }
-.shop-now {
+.is-hidden {
+    display: none;
+}
+ul {
+    list-style: none;
+}
+.shop-now__text {
     letter-spacing: 0.8em;
 }
 .about-furniture h1 {
     letter-spacing: 0.3em;
 }
-.desktop-nav {
-    top: 10%;
-    left: 5%;
+.carousel {
+    width: 100%;
+    height: 62vh;
+    position: relative;
 }
-.desktop-nav a {
-    padding-bottom: 5px;
+.carousel__track-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
-.desktop-nav a:hover {
-    border-bottom: solid 2px white;
-    cursor: pointer;
-} 
+.carousel__track {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform ease 0.5s;
+}
+.carousel__slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.carousel__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 @media screen and (max-width: 1024px) {
     main {
@@ -29,4 +56,30 @@ main {
     .desktop-slide {
         width: 11.5vw;
     }
+    .desktop__nav-container {
+        width: 50%;
+        padding: 0.5rem/* 8px */;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        z-index: 1;
+    }
+    .desktop__nav {
+        color: white;
+        font-size: 0.875rem/* 14px */;
+        font-weight: 600;
+        line-height: 1.25rem/* 20px */;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop__nav a {
+        padding-bottom: 5px;
+    }
+    .desktop__nav a:hover {
+        border-bottom: solid 2px white;
+        cursor: pointer;
+    } 
+    
 }

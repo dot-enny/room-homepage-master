@@ -13,6 +13,7 @@
 .mobile-sliders {
     @apply bg-black justify-self-stretch p-5 grid justify-items-center hover:bg-primary-200
 }
-.desktop-sliders {
+.carousel__button {
     @apply bg-black justify-self-stretch grid justify-items-center hover:bg-primary-200 lg:h-full lg:p-5 xl:h-full xl:p-7 
 }
+
