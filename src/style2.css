@@ -12,6 +12,9 @@ main {
 ul {
     list-style: none;
 }
+.hero__text {
+    padding-inline: 2em;
+}
 .shop-now__text {
     letter-spacing: 0.8em;
 }
@@ -81,5 +84,7 @@ ul {
         border-bottom: solid 2px white;
         cursor: pointer;
     } 
-    
+    .hero__text {
+        padding-inline: 6em;
+    }
 }
