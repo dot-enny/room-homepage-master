@@ -8,3 +8,4 @@ burger.addEventListener('click', (e) => {
 closeNav.addEventListener('click', (e) => {
     navContainer.classList.add('is-hidden');
 });
+

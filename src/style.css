@@ -5,15 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@500;600;700&display=swap');
 
 .mobile {
-    @apply lg:hidden
+    @apply xl:hidden
 }
 .desktop {
-    @apply hidden lg:block
+    @apply hidden xl:block
 }
 .carousel__button--mobile {
     @apply bg-black justify-self-stretch p-5 grid justify-items-center hover:bg-primary-200
 }
 .carousel__button {
-    @apply bg-black justify-self-stretch grid justify-items-center hover:bg-primary-200 lg:h-full lg:p-5 xl:h-full xl:p-7 
+    @apply bg-black justify-self-stretch grid justify-items-center hover:bg-primary-200 lg:p-5 xl:h-full xl:p-7 
 }
 

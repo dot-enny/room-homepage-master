@@ -719,7 +719,7 @@ video {
   color: hsl(0 0% 63% / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1280px){
   .mobile{
     display: none;
   }
@@ -729,7 +729,7 @@ video {
   display: none;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1280px){
   .desktop{
     display: block;
   }
@@ -764,7 +764,6 @@ video {
 
 @media (min-width: 1024px){
   .carousel__button{
-    height: 100%;
     padding: 1.25rem;
   }
 }
@@ -789,59 +788,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:col-span-7{
-    grid-column: span 7 / span 7;
-  }
-
-  .lg\:col-span-5{
-    grid-column: span 5 / span 5;
-  }
-
-  .lg\:col-span-4{
-    grid-column: span 4 / span 4;
-  }
-
-  .lg\:row-span-3{
-    grid-row: span 3 / span 3;
-  }
-
-  .lg\:row-span-2{
-    grid-row: span 2 / span 2;
-  }
-
-  .lg\:mr-2{
-    margin-right: 0.5rem;
-  }
-
-  .lg\:grid{
-    display: grid;
-  }
-
-  .lg\:grid-cols-10{
-    grid-template-columns: repeat(10, minmax(0, 1fr));
-  }
-
-  .lg\:grid-rows-5{
-    grid-template-rows: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:grid-rows-none{
-    grid-template-rows: none;
-  }
-
-  .lg\:p-0{
-    padding: 0px;
-  }
-
-  .lg\:py-14{
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-
-  .lg\:pt-8{
-    padding-top: 2rem;
-  }
-
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -856,16 +802,65 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
-
-  .lg\:font-bold{
-    font-weight: 700;
-  }
 }
 
 @media (min-width: 1280px){
+  .xl\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+
+  .xl\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
+  .xl\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
+  .xl\:row-span-3{
+    grid-row: span 3 / span 3;
+  }
+
+  .xl\:row-span-2{
+    grid-row: span 2 / span 2;
+  }
+
   .xl\:my-0{
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .xl\:mr-2{
+    margin-right: 0.5rem;
+  }
+
+  .xl\:grid{
+    display: grid;
+  }
+
+  .xl\:grid-cols-10{
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-5{
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-none{
+    grid-template-rows: none;
+  }
+
+  .xl\:p-0{
+    padding: 0px;
+  }
+
+  .xl\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:pt-8{
+    padding-top: 2rem;
   }
 
   .xl\:text-5xl{
@@ -881,6 +876,10 @@ video {
   .xl\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xl\:font-bold{
+    font-weight: 700;
   }
 }
 
