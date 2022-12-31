@@ -11,9 +11,6 @@ main {
     width: 100%;
     height: 100%;
 }
-.is-hidden {
-    display: none;
-}
 ul {
     list-style: none;
 }
@@ -51,6 +48,19 @@ ul {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+/* MOBILE NAV ANIMATION CLASSES */
+.mobile__nav-container {
+    transition: transform ease 0.1s;
+}
+.is-hidden {
+    transform: translateY(-100%);
+}
+.mobile__nav {
+    transition: all ease 0.5s;
+}
+.slide-in {
+    transform: translateX(-100%);
 }
 
 @media screen and (max-width: 640px) {
