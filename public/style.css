@@ -887,3 +887,124 @@ video {
   }
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 400px;
+}
+main {
+    box-shadow: 1px 1px 12px 2px hsl(0, 2%, 85%);
+    width: 100%;
+    height: 100%;
+}
+ul {
+    list-style: none;
+}
+.hero__text {
+    padding-inline: 2em;
+}
+.shop-now__text {
+    letter-spacing: 0.8em;
+}
+.about-furniture h1 {
+    letter-spacing: 0.3em;
+}
+.carousel {
+    width: 100%;
+    position: relative;
+}
+.carousel__track-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.carousel__track {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform ease 0.5s;
+}
+.carousel__slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.carousel__image, .about-section img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* MOBILE NAV ANIMATION CLASSES */
+.mobile__nav-container {
+    transition: transform ease 0.1s;
+}
+.is-hidden {
+    transform: translateY(-100%);
+}
+.mobile__nav {
+    transition: all ease 0.5s;
+}
+.slide-in {
+    transform: translateX(-100%);
+}
+
+@media screen and (max-width: 640px) {
+    .hero__text {
+        padding-block: 4.5em;
+    }
+}
+@media screen and (max-width: 1279px) {
+    main {
+        max-width: 32rem;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1280px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }    
+    .carousel__button-container--desktop {
+        width: 28%;
+    }
+    .desktop__nav-container {
+        width: 50%;
+        padding: 0.5rem/* 8px */;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        z-index: 1;
+    }
+    .desktop__nav {
+        color: white;
+        font-size: 0.875rem/* 14px */;
+        font-weight: 600;
+        line-height: 1.25rem/* 20px */;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop__nav a {
+        padding-bottom: 5px;
+    }
+    .desktop__nav a:hover {
+        border-bottom: solid 2px white;
+        cursor: pointer;
+    } 
+    .hero__text {
+        padding-inline: 3.9em;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .hero__text {
+        padding-inline: 6em;
+    }
+}
+
+
+
